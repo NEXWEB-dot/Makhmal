@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makhmal - Premium Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Use Phosphor Icons for a clean, modern look similar to the screenshot -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" crossorigin src="./assets/index-BfeYSszT.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Rt6EbzDd.css">
+</head>
+<body class="font-sans text-grey-7 bg-brand-white antialiased">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-black text-brand-white text-xs font-medium text-center py-2 uppercase tracking-widest">
+    Free local delivery on all orders over Rs. 3500
+  </div>
+
+  <!-- Header -->
+  <header class="border-b border-grey-1 sticky top-0 bg-brand-white z-40">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <!-- Hamburger (Mobile) -->
+        <div class="flex items-center lg:hidden">
+          <i class="ph ph-list text-2xl cursor-pointer"></i>
+        </div>
+        
+        <!-- Hamburger & Search (Desktop) -->
+        <div class="hidden lg:flex items-center space-x-4 w-1/3">
+          <i class="ph ph-list text-2xl cursor-pointer"></i>
+          <i class="ph ph-magnifying-glass text-xl cursor-pointer"></i>
+        </div>
+
+        <!-- Logo -->
+        <div class="flex-1 flex justify-center w-1/3">
+          <a href="#" class="text-3xl font-bold tracking-[0.2em] uppercase">SAPPHIRE</a>
+        </div>
+
+        <!-- Right Icons -->
+        <div class="flex items-center justify-end space-x-4 w-1/3">
+          <div class="hidden lg:flex items-center space-x-1 cursor-pointer">
+            <span class="text-sm font-medium">PKR</span>
+            <i class="ph ph-caret-down text-xs"></i>
+          </div>
+          <i class="ph ph-magnifying-glass text-xl cursor-pointer lg:hidden"></i>
+          <i class="ph ph-user text-xl cursor-pointer hidden md:block"></i>
+          <i class="ph ph-shopping-bag text-xl cursor-pointer"></i>
+        </div>
+      </div>
+      
+      <!-- Sub Navigation -->
+      <nav class="hidden lg:flex justify-center space-x-8 py-3 text-sm font-medium tracking-wider">
+        <a href="#" class="hover:text-primary transition-colors border-b-2 border-black pb-1">MAKHMAL</a>
+        <a href="#" class="hover:text-primary transition-colors text-grey-4">MAN</a>
+        <a href="#" class="hover:text-primary transition-colors text-grey-4">BEAUTY</a>
+        <a href="#" class="hover:text-primary transition-colors text-grey-4">ACCESSORIES</a>
+        <a href="#" class="hover:text-primary transition-colors text-grey-4">HOME</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Region Popup Modal -->
+  <div id="region-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+    <div class="bg-brand-white p-8 max-w-sm w-full relative mx-4">
+      <button id="close-modal" class="absolute top-4 right-4 text-grey-4 hover:text-black">
+        <i class="ph ph-x text-xl"></i>
+      </button>
+      <div class="text-center">
+        <h2 class="text-xl font-bold tracking-widest mb-4">SAPPHIRE</h2>
+        <p class="text-sm mb-6">Expect your order in from Singapore?</p>
+        <div class="flex flex-col space-y-3">
+          <button class="border border-black py-3 text-sm font-bold tracking-widest hover:bg-grey-1 transition-colors">CONTINUE TO PAKISTAN</button>
+          <button class="bg-black text-brand-white py-3 text-sm font-bold tracking-widest hover:bg-grey-7 transition-colors">NO, I'M IN SINGAPORE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Banner -->
+    <section class="relative h-[60vh] md:h-[80vh] bg-grey-1 flex items-end justify-center pb-12 overflow-hidden">
+      <!-- Background Image Placeholder (matching the layout of the screenshot) -->
+      <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Hero" class="absolute inset-0 w-full h-full object-cover object-top opacity-90">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+      
+      <div class="relative z-10 text-center text-brand-white">
+        <h1 class="text-2xl md:text-4xl font-light tracking-[0.2em] mb-4">MONOCHROME MUST-HAVES</h1>
+        <a href="#" class="inline-block border-b border-brand-white pb-1 text-sm tracking-widest hover:text-grey-4 hover:border-grey-4 transition-colors uppercase">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- NEW IN Section -->
+    <section class="container mx-auto px-4 py-16 md:py-24">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Text Block -->
+        <div class="lg:w-1/4 flex flex-col justify-center">
+          <span class="text-xs tracking-widest text-grey-4 mb-2">TRENDING</span>
+          <h2 class="text-3xl font-light tracking-wider mb-4">NEW IN</h2>
+          <p class="text-sm text-grey-4 mb-6 leading-relaxed">Update your wardrobe with the latest modest essentials and timeless silhouettes right now, ready to wear for the modern woman.</p>
+          <a href="#" class="inline-block border-b border-black w-max pb-1 text-sm tracking-widest font-medium hover:text-primary transition-colors">SHOP NOW</a>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="lg:w-3/4 grid grid-cols-2 md:grid-cols-3 gap-4">
+          <!-- Product 1 -->
+          <a href="#" class="group block">
+            <div class="relative aspect-[3/4] overflow-hidden bg-grey-1 mb-3">
+              <img src="https://cdn.shopify.com/s/files/1/0027/2596/9964/files/Tile_1_d_d4063dc3-8608-493e-85ad-0b1f84cc9302.webp?v=1781605689" alt="ABHAY" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <h3 class="text-center text-xs font-bold tracking-widest">ABHAY</h3>
+          </a>
+          <!-- Product 2 -->
+          <a href="#" class="group block">
+            <div class="relative aspect-[3/4] overflow-hidden bg-grey-1 mb-3">
+              <img src="https://cdn.shopify.com/s/files/1/0027/2596/9964/files/Tile_2_d_96a5b2a9-a7a5-49c2-8003-20c9a6a380da.webp?v=1781605689" alt="BAHAAR CASUAL" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <h3 class="text-center text-xs font-bold tracking-widest">BAHAAR CASUAL</h3>
+          </a>
+          <!-- Product 3 -->
+          <a href="#" class="group block hidden md:block">
+            <div class="relative aspect-[3/4] overflow-hidden bg-grey-1 mb-3">
+              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="DEEP PLUM OVERSIZE SHIRT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <h3 class="text-center text-xs font-bold tracking-widest">DEEP PLUM OVERSIZE S...</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNSTITCHED Section -->
+    <section class="bg-grey-1">
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2">
+          <img src="https://images.unsplash.com/photo-1583391733958-d25e61c2c3e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Unstitched Collection" class="w-full h-full object-cover aspect-[4/5] md:aspect-auto">
+        </div>
+        <div class="md:w-1/2 flex items-center justify-center p-12 md:p-24 relative">
+          <div class="max-w-md w-full">
+            <h2 class="text-4xl font-light tracking-[0.15em] mb-6">UNSTITCHED</h2>
+            <p class="text-grey-4 text-sm mb-10 leading-relaxed">The highly anticipated Unstitched Summer collection brings a curated selection of delicate embroideries and vibrant digital prints, designed to elevate your everyday.</p>
+            <div class="flex flex-wrap gap-6 text-sm font-medium tracking-widest border-t border-grey-4/30 pt-6">
+              <a href="#" class="border-b border-black pb-1 hover:text-primary transition-colors">1 PIECE</a>
+              <a href="#" class="border-b border-transparent pb-1 hover:border-black hover:text-primary transition-colors">2 PIECE</a>
+              <a href="#" class="border-b border-transparent pb-1 hover:border-black hover:text-primary transition-colors">3 PIECE</a>
+            </div>
+          </div>
+          <!-- Dots indicators for carousel-like look -->
+          <div class="absolute right-8 top-1/2 -translate-y-1/2 flex flex-col space-y-2 hidden md:flex">
+            <div class="w-1.5 h-6 bg-black rounded-full"></div>
+            <div class="w-1.5 h-1.5 bg-grey-4 rounded-full"></div>
+            <div class="w-1.5 h-1.5 bg-grey-4 rounded-full"></div>
+            <div class="w-1.5 h-1.5 bg-grey-4 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-2">
+      <!-- Tile 1 -->
+      <a href="#" class="relative block aspect-square group overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Embroidered Elegance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+        <div class="absolute inset-x-0 bottom-12 text-center text-brand-white">
+          <h3 class="text-lg md:text-xl font-bold tracking-widest mb-2">EMBROIDERED ELEGANCE</h3>
+          <span class="text-xs tracking-widest border-b border-brand-white/50 pb-0.5">SHOP THE TREND +</span>
+        </div>
+      </a>
+      <!-- Tile 2 -->
+      <a href="#" class="relative block aspect-square group overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="2 Piece" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+        <div class="absolute inset-x-0 bottom-12 text-center text-brand-white">
+          <h3 class="text-lg md:text-xl font-bold tracking-widest mb-2">2 PIECE</h3>
+          <span class="text-xs tracking-widest border-b border-brand-white/50 pb-0.5">SHOP THE LOOK +</span>
+        </div>
+      </a>
+      <!-- Tile 3 -->
+      <a href="#" class="relative block aspect-square group overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1550614000-4b95d466e872?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Outfits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+        <div class="absolute inset-x-0 bottom-12 text-center text-brand-white">
+          <h3 class="text-lg md:text-xl font-bold tracking-widest mb-2">OUTFITS</h3>
+          <span class="text-xs tracking-widest border-b border-brand-white/50 pb-0.5">SHOP ALL TRENDS +</span>
+        </div>
+      </a>
+      <!-- Tile 4 -->
+      <a href="#" class="relative block aspect-square group overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1515347619362-e67c87c5eb83?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Summer Whites" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
+        <div class="absolute inset-x-0 bottom-12 text-center text-brand-white">
+          <h3 class="text-lg md:text-xl font-bold tracking-widest mb-2">SUMMER WHITES</h3>
+          <span class="text-xs tracking-widest border-b border-brand-white/50 pb-0.5">SHOP THE LOOK +</span>
+        </div>
+      </a>
+    </section>
+
+    <!-- TRENDING Section -->
+    <section class="py-16 md:py-24 container mx-auto px-4">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-light tracking-[0.2em] mb-3">TRENDING</h2>
+        <p class="text-xs text-grey-4 tracking-widest mb-8 uppercase">The Season's Best Selling Styles</p>
+        
+        <!-- Tabs -->
+        <div class="flex flex-wrap justify-center gap-6 text-xs font-bold tracking-widest">
+          <a href="#" class="border-b-2 border-black pb-1">UNSTITCHED</a>
+          <a href="#" class="text-grey-4 hover:text-black transition-colors">READY TO WEAR</a>
+          <a href="#" class="text-grey-4 hover:text-black transition-colors">MAN</a>
+          <a href="#" class="text-grey-4 hover:text-black transition-colors">BEAUTY</a>
+          <a href="#" class="text-grey-4 hover:text-black transition-colors">HOME</a>
+        </div>
+      </div>
+
+      <!-- Carousel placeholder -->
+      <div class="relative">
+        <div class="flex overflow-hidden gap-4">
+          <!-- Item 1 -->
+          <div class="w-full md:w-1/4 flex-shrink-0 group">
+            <div class="aspect-[3/4] bg-grey-1 mb-4 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1621072156002-e2f56cb0a5d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <!-- Carousel Arrows Overlay (fake for UI accuracy based on screenshot) -->
+              <button class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-black hidden group-hover:flex">
+                 <i class="ph ph-caret-left"></i>
+              </button>
+            </div>
+            <h3 class="text-xs font-bold tracking-widest mb-1">EMBROIDERED LAWN SHIRT</h3>
+            <p class="text-sm font-medium">Rs. 3,490</p>
+          </div>
+          <!-- Item 2 -->
+          <div class="w-full md:w-1/4 flex-shrink-0 group hidden md:block">
+            <div class="aspect-[3/4] bg-grey-1 mb-4 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1583391733958-d25e61c2c3e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <h3 class="text-xs font-bold tracking-widest mb-1">PRINTED CAMBRIC SHIRT</h3>
+            <p class="text-sm font-medium">Rs. 2,490</p>
+          </div>
+          <!-- Item 3 -->
+          <div class="w-full md:w-1/4 flex-shrink-0 group hidden md:block">
+            <div class="aspect-[3/4] bg-grey-1 mb-4 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <h3 class="text-xs font-bold tracking-widest mb-1">PRINTED EMBROIDERED LAWN</h3>
+            <p class="text-sm font-medium">Rs. 3,990</p>
+          </div>
+          <!-- Item 4 -->
+          <div class="w-full md:w-1/4 flex-shrink-0 group hidden md:block">
+            <div class="aspect-[3/4] bg-grey-1 mb-4 overflow-hidden relative">
+              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <button class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center text-black hidden group-hover:flex">
+                 <i class="ph ph-caret-right"></i>
+              </button>
+            </div>
+            <h3 class="text-xs font-bold tracking-widest mb-1">EMBROIDERED COTTON LAWN</h3>
+            <p class="text-sm font-medium">Rs. 6,490</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORLD OF INSPIRATION -->
+    <section class="py-16 bg-grey-1 text-center">
+      <h2 class="text-2xl md:text-3xl font-light tracking-[0.2em] mb-2 uppercase">World of Inspiration</h2>
+      <p class="text-xs tracking-widest text-grey-4 mb-10 uppercase">Click to shop our Instagram feed</p>
+      
+      <!-- Placeholder blocks for Instagram tiles -->
+      <div class="flex justify-center gap-2 overflow-x-hidden opacity-50 grayscale px-4">
+        <div class="w-24 h-24 md:w-40 md:h-40 bg-grey-4 rounded-full"></div>
+        <div class="w-24 h-24 md:w-40 md:h-40 bg-grey-4 rounded-full"></div>
+        <div class="w-24 h-24 md:w-40 md:h-40 bg-grey-4 rounded-full"></div>
+        <div class="w-24 h-24 md:w-40 md:h-40 bg-grey-4 rounded-full"></div>
+        <div class="w-24 h-24 md:w-40 md:h-40 bg-grey-4 rounded-full"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brand-white border-t border-grey-1 pt-12 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <!-- Brand Info & Newsletter -->
+        <div class="md:col-span-1">
+          <h4 class="text-xs font-bold tracking-widest mb-4 uppercase">Join Our Newsletter</h4>
+          <p class="text-xs text-grey-4 mb-4 leading-loose">Subscribe to our newsletter to get latest updates and offers.</p>
+          <form class="flex border border-grey-4/50">
+            <input type="email" placeholder="Enter your email address" class="px-4 py-3 text-xs w-full outline-none focus:bg-grey-1 transition-colors">
+            <button type="submit" class="bg-black text-brand-white px-6 text-xs font-bold tracking-widest hover:bg-grey-7 transition-colors">SUBSCRIBE</button>
+          </form>
+          <div class="flex space-x-4 mt-6">
+            <i class="ph ph-facebook-logo text-xl hover:text-primary cursor-pointer transition-colors"></i>
+            <i class="ph ph-instagram-logo text-xl hover:text-primary cursor-pointer transition-colors"></i>
+            <i class="ph ph-youtube-logo text-xl hover:text-primary cursor-pointer transition-colors"></i>
+            <i class="ph ph-tiktok-logo text-xl hover:text-primary cursor-pointer transition-colors"></i>
+          </div>
+        </div>
+
+        <!-- Links Columns -->
+        <div class="grid grid-cols-2 md:grid-cols-3 col-span-1 md:col-span-3 gap-8">
+          <div>
+            <h4 class="text-xs font-bold tracking-widest mb-4 uppercase">Customer Care</h4>
+            <ul class="space-y-3 text-xs text-grey-4">
+              <li><a href="#" class="hover:text-black transition-colors">Contact Us</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">Delivery Information</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">Exchange & Return</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">FAQs</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">Track Your Order</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold tracking-widest mb-4 uppercase">Information</h4>
+            <ul class="space-y-3 text-xs text-grey-4">
+              <li><a href="#" class="hover:text-black transition-colors">About Us</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">SafePay Guide</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">Store Locator</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">Fabric Glossary</a></li>
+              <li><a href="#" class="hover:text-black transition-colors">Blogs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold tracking-widest mb-4 uppercase">Contact</h4>
+            <ul class="space-y-3 text-xs text-grey-4">
+              <li class="flex items-start gap-2">
+                <i class="ph ph-envelope-simple mt-0.5"></i>
+                <a href="mailto:wecare@sapphireonline.pk" class="hover:text-black transition-colors">wecare@sapphireonline.pk</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="ph ph-phone mt-0.5"></i>
+                <a href="tel:+9242111738245" class="hover:text-black transition-colors">+92(0)42 111-738-245</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-grey-1 pt-6 flex flex-col md:flex-row items-center justify-between text-xs text-grey-4">
+        <p>&copy; Copyright 2026 SAPPHIRE</p>
+        <div class="flex items-center space-x-2 mt-4 md:mt-0">
+          <i class="ph ph-credit-card text-2xl"></i>
+          <!-- Master card/Visa icons placeholders -->
+          <div class="flex gap-1">
+             <div class="w-8 h-5 bg-grey-4/20 rounded"></div>
+             <div class="w-8 h-5 bg-grey-4/20 rounded"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
